@@ -1,0 +1,25 @@
+<!DOCTYPE>
+ <html>
+ <head>
+     <meta charset="UTF-8" />
+     <title>Maptalks Quick Start</title>
+     <!-- or link to your downloaded files -->
+     <script type="text/javascript" src="src/osmToJSON/osmtogeojson.js"></script>
+     <script type="text/javascript" src="src/three/three.js"></script>
+     <script type="text/javascript" src="src/three/Orbit.js"></script>
+     <script type="text/javascript" src="src/three/convexGeo.js"></script>
+     <script type="text/javascript" src="src/three/quickHull.js"></script>
+ </head>
+ <body>
+
+        <div id="overlay">
+                Add a file:<input
+                  type="file"
+                  onchange="onChooseFile(event, onOSMLoad.bind(this))"
+                />
+        </div>
+        <div id="renderDOM"></div>
+
+        <script type="text/javascript" src="j1.js"></script>
+ </body>
+ </html>
